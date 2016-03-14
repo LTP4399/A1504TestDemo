@@ -4,11 +4,16 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context="com.litangping.projecttestgit.MainActivity">
-    <android.support.design.widget.TabLayout
-        android:id="@+id/tab_layout_main_content"
+    <RelativeLayout
+        android:id="@+id/rl_main_action_bar"
+        android:layout_above="@+id/bg_main_bottom"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
-    </android.support.design.widget.TabLayout>
-
+        android:layout_height="match_parent">
+    </RelativeLayout>
+    <RadioGroup
+        android:id="@+id/bg_main_bottom"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="?actionBarSize">
+    </RadioGroup>
 </RelativeLayout>
